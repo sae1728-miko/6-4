@@ -94,11 +94,10 @@ FROM
     matches AS m
 JOIN
     countries AS c1
-ON
-    m.my_country_id = c1.id
+    ON m.country_id = c1.id
 JOIN
     countries AS c2
-ON
-    m.enemy_country_id = c2.id;
+    ON m.enemy_country_id = c2.id;
+
 
 
